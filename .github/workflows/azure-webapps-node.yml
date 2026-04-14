@@ -74,5 +74,19 @@ jobs:
       uses: azure/webapps-deploy@v2
       with:
         app-name: ${{ env.AZURE_WEBAPP_NAME }}
+        {
+  "type": "service_account",
+  "project_id": "dogz4life-d2545",
+  "private_key_id": "f86b7a243ad0746f58eb8b9f6d0278ce24c43525",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCWFhP4efdMp8cb\nfO4mf+U/tGAs6LIYo3ji70XG9zX2uoElhCiui4BrJruoinL09dR6G37WW23dMNe8\nrTtc2urLvwZqwyffYwA2miK2om8p1K3g85DFSKhCpQ6GRwPehRpEEDtjqaRtAhDI\nb6BwcWJZBpPXhqF1Khxj1wXeyMmqxTKB8Cli8WSwO4H5wDNhxvsXbLfmxdMfPrL2\nElr3EcB7BlqTUMO8S6phrvZ5o8TO+ILrEuIk6kPyYD9MyBh78utuZNprk3BvQHb7\noVi6u6qQ1iCc1ZjI5Om1A7QnvstCdukxmcHpebKpuOj1UMf2dXnHlpF4cMzg2LZl\nkIeBSSd5AgMBAAECggEADjBTJGcsNnTlsWPe3dV/r979EqUDC6pBe1UuIXbtUc1K\n+IF+5eI67aZXqltAYYeJPIWZ7AKKJ3v+tHZW40EWkaF8ph41O3ypoGZALuG6iz4k\ngnZBGWDBK3ldBXVapWN4jeoc7myZjO0Ow7j6qXatDggkDoWXTczORBZ0llDtvWhj\n40cNOv1zjunaq+vHIJcjY4SJJLFQUjFc/0gkZPQEn2wfQn77SUaMbUdCrdDNXvxG\nvbT22b/tIh4ATDgIQCjaG55d1JpITIvudFvdcOsE5u1hTcw3SnUU/6nszap7QPZK\nDfSrbDmpHJmQOM9bawj7YqJVKm5XU5fviHBgYWn3uwKBgQDGCME+p9RaG1aRfJrs\nJHslM7PcKwYs5ltQlYjUOYlVQcndM+YdVZI696B45ehnxgyBre1XrFZ0VbMD8VAc\nlo0AtoYETFbVxi94BuiQEJvdSC4YTs7um22aHU9HBAaIITNZiqtgzi51UPj2UQSc\nCCuTThe7Mu/ZqXNAduWXVxXhDwKBgQDCBHOOQNBr6w5mRQYt+4JzqNy5jZwIIrJK\nG80svESce35ZStAxL2rfBzOTeiTRefO/Njm6G2mM9nQBJGS0ruPXiPl251kgZoZp\negdHCyFkT5+dTlsTZcGK0ktLsTNiOptxGVWLod/obfbIBbl0e66lw6dtw9DHs7Kh\ni6eYOd7e9wKBgEEFct2toS2MuFnAfeV2/O/0D+QERFzNrcHBt1FnKs5RcYQtnCqZ\nhA/Ual4Hrs0T29tgTgNxVFmSIdrziog4bkeDpnEW15QNJFzWd9mFeoenQWs9xPfX\nFJ97bCI3EiX0MLX/r9FzIRHn6jaF12ubyyLsiyIt0U64Ml1CLJQKRebFAoGAbrkN\nnVw91ajCgfjYSvui+hCfTsGTD02FxCdTkzkqSsdrVtgMMlWmPvukIoDtbCKVyUTP\n8vbb6NdpYpF7a2X3nzSLcaEbyxLXmHBMoO2oM9AA/kwOS+ahanETCXJqKZ/av9O+\nbz6FQucmlAY4TVKcW/tpnInIp39U7T5++a/lEgcCgYEAqr//8sLL7syvadlshFDn\n0pkWzwT3k/mAPIV++5WjdpbHdjvV6H2jsYQJMH+UXZiWAqUVo8fn7MPSGDLq3+YV\ng3oXrXHDR7Rp1SmWW5c/RPBykm1LzDmM7Ti9/4i0b9eOc1wDu1yAv+xrA6oYxSRW\nHMNCDOfm7/KaF+MMyxzO72A=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-fbsvc@dogz4life-d2545.iam.gserviceaccount.com",
+  "client_id": "104906786085575724857",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-fbsvc%40dogz4life-d2545.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+
         publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
         package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
